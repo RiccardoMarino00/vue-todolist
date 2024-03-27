@@ -3,11 +3,63 @@
 }
 
 .fa-x {
-    color: red;
+    color: rgb(72, 12, 12);
 }
 
 ul,
 ol,
 menu{
     list-style: none;
+}
+
+html{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button{
+    width: 80px;
+}
+
+#app{
+    position: relative;
+    height: 100vh;
+}
+
+
+.todo-item:hover {
+    background-color: rgba(203, 203, 26, 0.438);
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+
+body{
+    background: rgba(66, 158, 211,);
+    background: linear-gradient(0deg, rgba(34,137,195,1) 42%, rgba(45,73,253,1) 63%);
+}
+
+.header-page{
+    background: rgb(255,221,80);
+    background: radial-gradient(circle, rgba(255,221,80,1) 0%, rgba(255,101,80,1) 100%);
+    text-align: center;
+    padding: 20px;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* background: rgb(195,194,34);
+    background: linear-gradient(0deg, rgb(81, 81, 26) 42%, rgb(89, 60, 6) 63%); */
+    padding: 50px;
+    border-radius: 67px 0px 68px 0px;
+    -webkit-border-radius: 67px 0px 68px 0px;
+    -moz-border-radius: 67px 0px 68px 0px;
+    border: 10px inset #ff6550;
+
 }
