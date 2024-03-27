@@ -1,3 +1,7 @@
 .testo-sbarrato{
     text-decoration: line-through;
 }
+
+.fa-x {
+    color: red;
+}
