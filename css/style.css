@@ -5,3 +5,9 @@
 .fa-x {
     color: red;
 }
+
+ul,
+ol,
+menu{
+    list-style: none;
+}

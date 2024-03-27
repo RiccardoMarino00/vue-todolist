@@ -4,10 +4,8 @@ const { createApp } = Vue
     data() {
       return {
         proprietà: "testo-sbarrato",
-        inputNewTodo: {
-            text: "",
-            done: false,
-        },
+        inputNewTodo: "",
+       
         todos: [
             {
                 text: "Andare a comprare il succo",
@@ -38,11 +36,16 @@ const { createApp } = Vue
             this.todos.splice(i, 1)
         },
         addedItem(){
-            this.todos.push(this.inputNewTodo)
-            console.log(this.todos)
-            console.log(this.inputNewTodo)
-            this.inputNewTodo = ''
-            console.log("secondo " + this.inputNewTodo)
+            // Creo un oggetto che sarà il mio todo
+            const newTodo = {
+                text: this.inputNewTodo,
+                done: false,
+            };
+            this.todos.push(newTodo)
+            //console.log(this.todos)
+            //console.log(this.inputNewTodo)
+            this.inputNewTodo = '';
+            //console.log("secondo " + this.inputNewTodo.text)
 
         }
     }
