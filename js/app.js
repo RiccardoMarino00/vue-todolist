@@ -4,6 +4,10 @@ const { createApp } = Vue
     data() {
       return {
         proprietà: "testo-sbarrato",
+        inputNewTodo: {
+            text: "",
+            done: false,
+        },
         todos: [
             {
                 text: "Andare a comprare il succo",
@@ -26,11 +30,20 @@ const { createApp } = Vue
                 done: false,
             },
         ]
+
       }
     },
     methods: {
         removeItem(i){
             this.todos.splice(i, 1)
+        },
+        addedItem(){
+            this.todos.push(this.inputNewTodo)
+            console.log(this.todos)
+            console.log(this.inputNewTodo)
+            this.inputNewTodo = ''
+            console.log("secondo " + this.inputNewTodo)
+
         }
     }
   }).mount('#app')
