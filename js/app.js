@@ -46,7 +46,13 @@ const { createApp } = Vue
             //console.log(this.inputNewTodo)
             this.inputNewTodo = '';
             //console.log("secondo " + this.inputNewTodo.text)
-
+        },
+        switchDone(todo){
+            if(todo.done === true){
+                todo.done = false
+            } else {
+                todo.done = true
+            }
         }
     }
   }).mount('#app')

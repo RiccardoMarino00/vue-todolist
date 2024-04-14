@@ -22,7 +22,7 @@
                 <button type="button " class="btn btn-warning button text-center p-2 mt-2 mb-2" @click="addedItem()">Aggiungi</button>
                 <div>
                     <ul class="todos-list" v-for="(element, i) in todos" :class="{'testo-sbarrato' : element.done === true}">
-                        <li  class="todo-item" ><a href="#"><i class="fa-solid fa-x p-2" @click="removeItem(i)"></i></a> {{element.text}} </li>
+                        <li  class="todo-item" ><a href="#"><i class="fa-solid fa-x p-2" @click="removeItem(i)"></i></a><span @click="switchDone(element)">{{element.text}}</span>  </li>
                     </ul>
                 </div>
                 
